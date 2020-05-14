@@ -1,0 +1,11 @@
+# Tool Name :- IP-Tracer
+# Author :- Arham
+# Date :- 5/14/2020
+
+if [ -d /data/data/com.termux/files/usr/share ];then
+  cd /data/data/com.termux/files/usr/share/IP-Tracer
+  exec bash trace $@
+elif [ -d /usr/share ];then
+  cd /usr/share/IP-Tracer
+  exec bash trace $@
+fi
